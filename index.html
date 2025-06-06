@@ -20,11 +20,11 @@
 
         /* Paleta de Colores Sugerida */
         :root {
-            --color-primary-blue: #0A74DA; /* Azul eléctrico/cobalto */
-            --color-primary-dark: #1A1A1A; /* Negro/Gris oscuro */
-            --color-secondary-light: #F5F5F5; /* Blanco/Plata */
-            --color-accent-orange: #FF6700; /* Naranja vibrante */
-            --color-accent-yellow: #F9D71C; /* Amarillo neón */
+            --color-primary-blue: #0A74DA;
+            --color-primary-dark: #1A1A1A;
+            --color-secondary-light: #F5F5F5;
+            --color-accent-orange: #FF6700;
+            --color-accent-yellow: #F9D71C;
         }
 
         body {
@@ -35,13 +35,13 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Bebas Neue', cursive; /* O Anton, Montserrat Bold */
+            font-family: 'Bebas Neue', cursive;
         }
         .sticky-header {
             position: sticky;
             top: 0;
             z-index: 50;
-            background-color: rgba(26, 26, 26, 0.9); /* Fondo oscuro con transparencia */
+            background-color: rgba(26, 26, 26, 0.9);
             backdrop-filter: blur(10px);
         }
 
@@ -71,23 +71,15 @@
             color: var(--color-primary-dark);
             transform: scale(1.05);
         }
-        .btn-secondary {
-            background-color: var(--color-primary-blue);
-            color: var(--color-secondary-light);
-        }
-        .btn-secondary:hover {
-            background-color: #0056b3; /* Azul más oscuro */
-            transform: scale(1.05);
-        }
 
         .section-title {
-            font-size: 3rem; /* 48px */
+            font-size: 3rem;
             color: var(--color-accent-orange);
             margin-bottom: 1rem;
             text-align: center;
         }
         .section-subtitle {
-            font-size: 1.5rem; /* 24px */
+            font-size: 1.5rem;
             color: var(--color-secondary-light);
             margin-bottom: 2rem;
             text-align: center;
@@ -95,14 +87,14 @@
         }
 
         .hero-section {
-            background-image: url('1 Horizontal.jpg'); /* IMAGEN MODIFICADA */
+            background-image: url('1 Horizontal.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Efecto parallax sutil */
+            background-attachment: fixed;
         }
 
         .card {
-            background-color: #2D2D2D; /* Un poco más claro que el fondo principal */
+            background-color: #2D2D2D;
             border-radius: 0.75rem;
             padding: 1.5rem;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
@@ -130,7 +122,6 @@
             box-shadow: 0 0 0 0.2rem rgba(255, 103, 0, 0.25);
         }
 
-        /* Animaciones sutiles */
         .scroll-reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -143,11 +134,11 @@
         .video-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* Proporción 16:9 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            border-radius: 0.5rem; /* Esquinas redondeadas */
-            background-color: #000; /* Fondo negro para el contenedor de video */
+            border-radius: 0.5rem;
+            background-color: #000;
         }
         .video-container video {
             position: absolute;
@@ -155,13 +146,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Asegura que el video cubra el contenedor */
+            object-fit: cover;
         }
-
-
-        /* Icono Favicon (ejemplo) */
-        /* Deberás crear un archivo favicon.ico y colocarlo en la raíz o enlazarlo aquí */
-        /* <link rel="icon" href="favicon.ico" type="image/x-icon"> */
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
@@ -197,7 +183,8 @@
 
     <main>
         <section id="inicio" class="hero-section h-screen flex items-center justify-center text-center relative">
-            <div class="absolute inset-0 bg-black opacity-60"></div> <div class="relative z-10 p-6">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 p-6">
                 <h1 class="text-5xl md:text-7xl font-anton text-white leading-tight mb-4 animate-fade-in-down">Mateo "Encantador" Badillo</h1>
                 <h2 class="text-3xl md:text-5xl font-bebas text-[var(--color-accent-yellow)] mb-6 animate-fade-in-up delay-200">La Nueva Cara del MMA Mexicano</h2>
                 <p class="text-xl md:text-2xl font-lato text-gray-200 mb-10 max-w-3xl mx-auto animate-fade-in-up delay-400">Disciplina, Innovación y el Corazón de Tlaxcala en Cada Pelea.</p>
@@ -234,7 +221,6 @@
                         <p class="text-4xl font-anton text-[var(--color-accent-orange)]">4-1 <span class="text-sm">(torneos)</span></p>
                         <p class="text-gray-400">(4 Victorias - 1 Derrota)</p>
                     </div>
-
                     <div class="card transform hover:scale-105 transition-transform duration-300">
                         <i class="fas fa-medal text-5xl text-[var(--color-accent-yellow)] mb-4 text-center w-full"></i>
                         <h4 class="text-2xl font-montserrat-bold mb-3 text-center text-[var(--color-secondary-light)]">Participaciones Destacadas</h4>
@@ -243,9 +229,8 @@
                             <li>Participación en Submission Challenge de Gladiatoro Fight League (La liga más grande de Tlaxcala).</li>
                         </ul>
                     </div>
-
                     <div class="card transform hover:scale-105 transition-transform duration-300">
-                         <i class="fas fa-trophy text-5xl text-[var(--color-accent-yellow)] mb-4 text-center w-full"></i>
+                        <i class="fas fa-trophy text-5xl text-[var(--color-accent-yellow)] mb-4 text-center w-full"></i>
                         <h4 class="text-2xl font-montserrat-bold mb-3 text-center text-[var(--color-secondary-light)]">Campeonatos y Torneos</h4>
                         <ul class="list-disc list-inside space-y-2 text-gray-300 text-left pl-4">
                             <li>3 Victorias: Campeonato Regional de Xicothzingo (MMA).</li>
@@ -255,7 +240,7 @@
                         </ul>
                     </div>
                 </div>
-                 <div class="mt-12 flex justify-center">
+                <div class="mt-12 flex justify-center">
                     <img src="https://placehold.co/800x400/0A74DA/FFFFFF?text=Logros+Destacados" alt="Imagen de Logros en MMA" class="rounded-lg shadow-xl gallery-img max-w-full">
                 </div>
 
@@ -264,17 +249,16 @@
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="card flex flex-col items-center justify-center">
                             <h3 class="text-xl font-montserrat-bold text-center text-[var(--color-accent-yellow)] mb-2">Gladiatorio Fight League 09</h3>
-                            <img src="Banner 009.jpg" alt="Banner Gladiatorio Fight League 09" class="rounded-md shadow-md w-full max-w-md mb-4 gallery-img">
-                            <p class="text-lg text-gray-300 text-center">27 de julio</p>
+                            <img src="Banner009.webp" alt="Banner Gladiatorio Fight League 09" class="rounded-md shadow-md w-full max-w-md mb-4 gallery-img">
+                            <p class="text-lg text-gray-300 text-center">27 de Julio, 2025</p>
                         </div>
                         <div class="card flex flex-col items-center justify-center">
                             <h3 class="text-xl font-montserrat-bold text-center text-[var(--color-accent-yellow)] mb-2">ESL Nationals</h3>
-                            <img src="Image 2.jpg" alt="Banner ESL Nationals" class="rounded-md shadow-md w-full max-w-md mb-4 gallery-img">
-                            <p class="text-lg text-gray-300 text-center">17 de agosto</p>
+                            <img src="ESLBanner25.jpg" alt="Banner ESL Nationals" class="rounded-md shadow-md w-full max-w-md mb-4 gallery-img">
+                            <p class="text-lg text-gray-300 text-center">17 de Agosto, 2025</p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -284,12 +268,10 @@
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                     <img src="2.jpeg" alt="Imagen de Mateo en combate 1" class="w-full h-64 object-cover rounded-lg gallery-img">
                     <img src="FelonyDecisión.jpeg" alt="Imagen de Mateo en combate 2" class="w-full h-64 object-cover rounded-lg gallery-img">
-                    <img src="https://placehold.co/600x400/1A1A1A/FFA500?text=Combate+3" alt="Imagen de Mateo en combate 3" class="w-full h-64 object-cover rounded-lg gallery-img md:col-span-1 lg:col-span-1">
-                    <img src="https://placehold.co/600x400/1A1A1A/FFA500?text=Combate+4" alt="Imagen de Mateo en combate 4" class="w-full h-64 object-cover rounded-lg gallery-img md:col-span-1 lg:col-span-1">
-
+                    <img src="https://placehold.co/600x400/1A1A1A/FFA500?text=Combate+3" alt="Imagen de Mateo en combate 3" class="w-full h-64 object-cover rounded-lg gallery-img">
+                    <img src="https://placehold.co/600x400/1A1A1A/FFA500?text=Combate+4" alt="Imagen de Mateo en combate 4" class="w-full h-64 object-cover rounded-lg gallery-img">
                     <img src="https://placehold.co/600x400/0A74DA/FFFFFF?text=Entrenamiento+1" alt="Imagen de Mateo entrenando 1" class="w-full h-64 object-cover rounded-lg gallery-img">
                     <img src="https://placehold.co/600x400/0A74DA/FFFFFF?text=Entrenamiento+2" alt="Imagen de Mateo entrenando 2" class="w-full h-64 object-cover rounded-lg gallery-img">
-
                     <img src="3.jpeg" alt="Imagen de Mateo estilo Encantador 1" class="w-full h-64 object-cover rounded-lg gallery-img">
                     <img src="https://placehold.co/600x400/F9D71C/1A1A1A?text=Estilo+2" alt="Imagen de Mateo estilo Encantador 2" class="w-full h-64 object-cover rounded-lg gallery-img">
                 </div>
@@ -313,7 +295,7 @@
                         </video>
                     </div>
                     <div class="md:col-span-2 video-container shadow-xl">
-                         <video controls poster="https://placehold.co/1280x720/F9D71C/1A1A1A?text=Video+Mensaje+Personal">
+                        <video controls poster="https://placehold.co/1280x720/F9D71C/1A1A1A?text=Video+Mensaje+Personal">
                             <source src="videos/mensaje_personal.mp4" type="video/mp4">
                             Tu navegador no soporta la etiqueta de video.
                         </video>
@@ -329,12 +311,11 @@
                     <p>Como atleta en ascenso, ofrezco a las marcas una oportunidad única de <strong class="text-[var(--color-accent-orange)]">visibilidad y conexión</strong> con una audiencia joven, dinámica y apasionada por el MMA, especialmente en la región centro de México. Mi marca personal se asocia con valores de <strong class="text-[var(--color-accent-orange)]">disciplina, innovación en el grappling/Jiujitsu y autenticidad</strong>.</p>
                     <p>Estoy comprometido a crear <strong class="text-[var(--color-accent-orange)]">contenido específico y genuino</strong> para mis patrocinadores, integrando productos y servicios de manera natural en mi día a día, mi preparación como grappler y mi presencia en redes sociales.</p>
                     <p>Busco alianzas estratégicas con marcas que compartan mi pasión por el deporte y la superación. Estoy particularmente interesado en colaborar con marcas de equipamiento deportivo para grappling/Jiujitsu (gis, rashguards), suplementos, ropa deportiva y empresas con visión de crecimiento en el mercado del MMA y los deportes de agarre.</p>
-
                     <h3 class="text-2xl font-montserrat-bold text-center text-[var(--color-accent-yellow)] pt-6">Mis Patrocinadores</h3>
                     <div class="flex flex-wrap justify-center items-center gap-8 py-6">
-                         <img src="https://placehold.co/150x80/F5F5F5/1A1A1A?text=Logo+Patrocinador" alt="Logo Patrocinador" class="h-16 opacity-70 hover:opacity-100 transition-opacity">
-                         <img src="https://placehold.co/150x80/F5F5F5/1A1A1A?text=Logo+Patrocinador" alt="Logo Patrocinador" class="h-16 opacity-70 hover:opacity-100 transition-opacity">
-                         <p class="w-full text-center text-gray-500 italic">(Espacio para futuros patrocinadores)</p>
+                        <img src="https://placehold.co/150x80/F5F5F5/1A1A1A?text=Logo+Patrocinador" alt="Logo Patrocinador" class="h-16 opacity-70 hover:opacity-100 transition-opacity">
+                        <img src="https://placehold.co/150x80/F5F5F5/1A1A1A?text=Logo+Patrocinador" alt="Logo Patrocinador" class="h-16 opacity-70 hover:opacity-100 transition-opacity">
+                        <p class="w-full text-center text-gray-500 italic">(Espacio para futuros patrocinadores)</p>
                     </div>
                     <div class="text-center mt-8">
                         <a href="#contacto" class="btn btn-primary text-lg">¿Interesado en Colaborar? ¡Hablemos!</a>
@@ -346,7 +327,7 @@
         <section id="audiencia" class="py-20 scroll-reveal">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">Conectando <span class="text-[var(--color-secondary-light)]">con los Fans</span></h2>
-                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                     <div class="card">
                         <i class="fab fa-instagram text-6xl text-[var(--color-primary-blue)] mb-4"></i>
                         <p class="text-2xl font-montserrat-bold">@mateo_starr</p>
@@ -404,7 +385,6 @@
                         </div>
                         <div id="form-status" class="mt-4 text-center"></div>
                     </form>
-
                     <div class="space-y-8">
                         <div class="card">
                             <h3 class="text-2xl font-montserrat-bold text-[var(--color-accent-orange)] mb-3">Información Directa</h3>
@@ -412,18 +392,18 @@
                                 <i class="fas fa-envelope text-[var(--color-primary-blue)] mr-3 text-xl"></i>
                                 <a href="mailto:badillomanagment@gmail.com" class="hover:text-[var(--color-accent-yellow)]">badillomanagment@gmail.com</a>
                             </p>
-                            </div>
+                        </div>
                         <div class="card text-center">
-                             <h3 class="text-2xl font-montserrat-bold text-[var(--color-accent-orange)] mb-4">Sígueme</h3>
+                            <h3 class="text-2xl font-montserrat-bold text-[var(--color-accent-orange)] mb-4">Sígueme</h3>
                             <a href="https://www.instagram.com/mateo_starr/" target="_blank" rel="noopener noreferrer" class="inline-block group">
                                 <i class="fab fa-instagram text-8xl text-gray-400 group-hover:text-[#E1306C] transition-colors duration-300 transform group-hover:scale-110"></i>
                                 <p class="mt-2 text-lg text-gray-300 group-hover:text-[var(--color-accent-yellow)]">@mateo_starr</p>
                             </a>
                         </div>
-                         <div id="map-placeholder" class="card h-64 flex items-center justify-center text-gray-500">
+                        <div id="map-placeholder" class="card h-64 flex items-center justify-center text-gray-500">
                             <i class="fas fa-map-marked-alt text-5xl mr-3"></i>
                             <span>Espacio para mapa (opcional)</span>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -432,7 +412,7 @@
 
     <footer class="py-10 bg-[var(--color-primary-dark)] border-t border-gray-700 text-center scroll-reveal">
         <p class="text-gray-400 font-lato">&copy; <span id="currentYear"></span> Mateo "Encantador" Badillo Olvera. Todos los derechos reservados.</p>
-        </footer>
+    </footer>
 
     <script>
         // Menú móvil
@@ -447,10 +427,91 @@
             icon.classList.toggle('fa-times');
         });
 
-        // Cerrar menú móvil al hacer clic en un enlace
         navLinksMobile.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
                 const icon = mobileMenuButton.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
+            });
+        });
+        
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Animación de Scroll
+        const scrollElements = document.querySelectorAll('.scroll-reveal');
+        const elementInView = (el, percentageScroll = 100) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= 
+                ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100))
+            );
+        };
+        const displayScrollElement = (element) => {
+            element.classList.add('visible');
+        };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 80)) {
+                    displayScrollElement(el);
+                }
+            })
+        }
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+        handleScrollAnimation();
+
+        // Formulario de contacto
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('form-status');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                formStatus.innerHTML = '<p class="text-yellow-400">Enviando mensaje...</p>';
+                setTimeout(() => {
+                    const randomSuccess = Math.random() < 0.8; 
+                    if (randomSuccess) {
+                        formStatus.innerHTML = '<p class="text-green-400">¡Mensaje enviado con éxito! Gracias por contactarme.</p>';
+                        contactForm.reset();
+                    } else {
+                        formStatus.innerHTML = '<p class="text-red-400">Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.</p>';
+                    }
+                    setTimeout(() => {
+                        formStatus.innerHTML = '';
+                    }, 5000);
+                }, 1500);
+            });
+        }
+
+        // Animaciones de entrada para Hero Section
+        const animatedElements = [
+            { selector: '.animate-fade-in-down', delay: 0 },
+            { selector: '.animate-fade-in-up.delay-200', delay: 200 },
+            { selector: '.animate-fade-in-up.delay-400', delay: 400 },
+            { selector: '.animate-fade-in-up.delay-600', delay: 600 }
+        ];
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = `
+            @keyframes fadeInDown {
+                0% { opacity: 0; transform: translateY(-20px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes fadeInUp {
+                0% { opacity: 0; transform: translateY(20px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in-down { animation: fadeInDown 0.8s ease-out forwards; opacity:0; }
+            .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity:0; }
+        `;
+        document.head.appendChild(styleSheet);
+        animatedElements.forEach(elConfig => {
+            const element = document.querySelector(elConfig.selector);
+            if (element) {
+                element.style.animationDelay = `${elConfig.delay}ms`;
+            }
+        });
+    </script>
+</body>
+</html>
